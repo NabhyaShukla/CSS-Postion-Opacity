@@ -1,30 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Postion</title>
 
     <style>
-
-
-        div.fixed{
-             background-color: rgb(96, 148, 239);
-             height: 20px;
-             width: 100px;
-             position: fixed;
-             top: 20px;
-             right: 20px;
-             padding: 20px;
-             border: 3px solid blue;
+        div.fixed {
+            background-color: rgb(96, 148, 239);
+            height: 20px;
+            width: 100px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 20px;
+            border: 3px solid blue;
 
         }
 
-        div.spacer{
+        div.spacer {
             height: 2000px;
         }
 
-        div.sticky{
+        div.sticky {
             background-color: rgb(56, 105, 93);
             position: sticky;
             top: 25px;
@@ -34,7 +33,7 @@
             border: 2px solid black;
         }
 
-        .box{
+        .box {
             width: 120px;
             height: 120px;
             color: rgb(125, 154, 72);
@@ -44,28 +43,48 @@
             font-weight: bold;
         }
 
-        .relative{
+        .relative {
             background-color: rgb(176, 239, 51);
             position: relative;
             left: 20px;
             right: 20px;
             border: 2px solid black;
         }
+
+        .parent {
+            position: relative;
+            height: 200px;
+            border: 2px dotted black;
+            margin-top: 50px;
+
+        }
+
+        .absolute {
+            background-color: aquamarine;
+            position: absolute;
+            right: 20px;
+            bottom: 10px;
+        }
     </style>
 </head>
+
 <body>
 
-    <h1>Css Postioning</h1>
+    <h1>CSS Positioning</h1>
 
-    <div class="fixed">Fixed Position</div>
-
-    <div class="spacer"></div>
-
-    <div class="sticky">I will Stick to somewhere near the top</div>
-
-    <div class="spacer"></div>
+    <div class="fixed"> Fixed Position</div>
 
     <div class="box relative">Relative</div>
-    
+
+    <div class="parent">
+        <div class="box absolute">Absolute</div>
+    </div>
+
+    <div class="sticky">I will stick to somewhere near the top</div>
+
+    <div class="spacer"></div>
+
+
 </body>
+
 </html>
